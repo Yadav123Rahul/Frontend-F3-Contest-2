@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background: #9f5454; */
+    overflow: hidden;
+}
+#app {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.main-div{
+    display: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcome{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 444px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 6px 8px 5px rgba(0, 0, 0, 0.05);
+    padding: 15px 40px;
+}
+
+.content>input{
+    margin-top: 7px;
+    width: 100%;
+    height: 36px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #DEDEDE;
+    padding: 0 10px;
+}
+button{
+    padding: 9px 14px;
+    border-radius: 6px;
+    background: linear-gradient(180deg, #625BF7 0%, #463EEA 100%);
+    font-size: 16px;
+    color: #FFFF;
+    border: none;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.error{
+    color: #625BF7;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    display: none;
+}
+.signup{
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.signup>span{
+    color: #625BF7;
+    cursor: pointer;
+}
+
+
+.user-icon{
+    flex-direction: column;
+}
+
+.profile-hedding{
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    display: none;
+}
+
+.profile-content{
+    gap: 10px;
+    flex-direction: column;
+}
+p{
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+}
+
+.gap{
+    gap: 30px;
+    width: 444px;
+    height: 400px;
+}
+
+.signup-profile{
+    color: #625BF7;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.active{
+    display: block;
+}
+

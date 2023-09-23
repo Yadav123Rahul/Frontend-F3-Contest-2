@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>User Authentication</title>
+  </head>
+  <body>
+    <div id="app" class="flex">
+      <!-- <div class="diagonal diagonal1"></div> -->
+      <div id="signup" class="main-div">
+        <form action="" class="page" >
+          <div class="welcome">Welcome back! 👋</div>
+          <h1>Sign up to your account</h1>
+          <div class="content">
+            <label for="UserName">Your Name</label><br />
+            <input type="text" id="username"  /><br />
+          </div>
+          <div class="content">
+            <label for="Email">Your Email</label><br />
+            <input type="email" id="email"  /><br />
+            
+          </div>
+          <div class="content">
+            <label for="password">Password</label><br />
+            <input type="password" id="password"  /><br />
+            
+          </div>
+          <div class="content">
+            <label for="Cpassword">Confirm Password</label><br />
+            <input type="password" id="con-password"  />
+            
+          </div>
+          <button onclick="signup()">Continue</button>
+          <div id="error-first" class="error">Error: All fields are mandatory!</div>
+        </form>
+
+        <div class="signup">
+          Don’t have an account?
+          <span id="user-sign-up" onclick="reload()">Sign up</span>
+        </div>
+      </div>
+
+      <div id="profile" class="profile">
+        <div class="signup-profile">Signup Successfully!</div>
+        <div class="page gap">
+          <h2 class="profile-hedding">Profile</h2>
+          <div class="flex user-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="42"
+              viewBox="0 0 41 42"
+              fill="none"
+            >
+              <path
+                d="M20.6668 38.6667C30.5159 38.6667 38.5002 30.6824 38.5002 20.8333C38.5002 10.9843 30.5159 3 20.6668 3C10.8178 3 2.8335 10.9843 2.8335 20.8333C2.8335 30.6824 10.8178 38.6667 20.6668 38.6667Z"
+                stroke="#625BF7"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="77"
+              height="32"
+              viewBox="0 0 77 32"
+              fill="none"
+            >
+              <path
+                d="M74.3333 29.25V20.3333C74.3333 15.6036 72.4545 11.0677 69.1101 7.72327C65.7657 4.37887 61.2297 2.5 56.5 2.5H20.8333C16.1036 2.5 11.5677 4.37887 8.22326 7.72327C4.87886 11.0677 3 15.6036 3 20.3333V29.25"
+                stroke="#625BF7"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="profile-content flex">
+            <p>Full Name: <span id="profile-username"></span></p>
+            <p>Email: <span id="profile-email"></span></p>
+            <p>Token: <span id="profile-token"></span></p>
+            <p>Password: <span id="profile-password"></span></p>
+          </div>
+          <button onclick="logout()">Logout</button>
+        </div>
+      </div>
+
+      <!-- <div class="diagonal diagonal2"></div> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
